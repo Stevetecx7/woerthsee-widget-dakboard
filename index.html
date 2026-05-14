@@ -159,7 +159,7 @@
 
 <script>
 // Lokaler Proxy auf dem Raspberry Pi — kein CORS-Problem
-const TARGET = 'https://192.168.1.79:3456';
+const TARGET = 'http://192.168.1.79:3456';
 
 async function tryFetch(url) {
   const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
